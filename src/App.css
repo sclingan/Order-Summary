@@ -55,21 +55,99 @@ p, h1, h2, h3, h4, h5, h6 {
   --fs: 1rem;
   --ff: 'Red Hat Display', serif;
 }
-
-.div__card {
-
-}
-
+/* TODO:
+   fix background position
+   shading and shadow --primary-pale-blue
+   adjust padding so button takes up more room inline
+*/
 body {
   display: grid;
   place-content: center;
   background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--primary-pale-blue);
   font-family: var(--ff);
   font-size: var(--fs);
   font-weight: var(--fw-500);
+  color: var(--neutral-desat-blue);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.div__card {
+  max-width: 20.3125rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--neutral-pale-blue);
+  box-shadow: .1rem .8rem 1rem var(--neutral-desat-blue);
+}
+
+.div__card_info {
+  padding-inline: 1.5rem;
+}
+
+h1 {
+  color: var(--neutral-dark-blue);
+  font-weight: var(--fw-900);
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.div__card_plan {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.p__plan {
+  font-weight: var(--fw-900);
+  color: var(--neutral-dark-blue);
+}
+
+.a__change {
+  font-weight: var(--fw-700);
+  color: var(--primary-bright-blue);
+  font-size: .8rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.btn__payment {
+  margin-block: 2rem;
+  border-radius: .5rem;
+  border: none;
+  background-color: var(--primary-bright-blue);
+  color: var(--primary-pale-blue);
+  font-weight: var(--fw-700);
+  padding: .8rem 3rem;
+  box-shadow: .2rem .8rem 1rem var(--neutral-desat-blue);
+  cursor: pointer;
+}
+
+.btn__payment:hover {
+  background-color: var(--neutral-desat-blue);
+}
+
+.btn__cancel {
+  text-decoration: none;
+  border: none;
+  background-color: var(--neutral-pale-blue);
+  font-weight: var(--fw-700);
+  color: var(--neutral-desat-blue);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

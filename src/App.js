@@ -1,11 +1,13 @@
 import './App.css';
+import hero from './images/illustration-hero.svg';
+import music from './images/icon-music.svg';
 
 function App() {
   return (
   <main>
     <div className="div__card">
       <header>
-        <img src='./images/illustration-hero.svg' alt=""></img>
+        <img src={hero} alt=""></img>
       </header>
       <div className="div__card_info">
         <h1>Order Summary</h1>
@@ -14,13 +16,17 @@ function App() {
           device anywhere you like!
         </p>
         <div className="div__card_plan">
-         Annual Plan
-         $59.99/year
-
-         Change
-      </div>
-        Proceed to Payment
-        Cancel Order
+          <img src={music} alt=""></img>
+          <div className='div__plan_info'>
+            <p className="p__plan">Annual Plan</p>
+          </div>
+          <div className='div__plan_cost'>
+            <p>$59.99/year</p>
+          </div>
+           <a className="a__change" href="#">Change</a>
+        </div>
+        <button className="btn__payment">Proceed to Payment</button>
+        <button className="btn__cancel">Cancel Order</button>
       </div>
     
     </div>
