@@ -57,8 +57,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* TODO:
    fix background position
-   shading and shadow --primary-pale-blue
-   adjust padding so button takes up more room inline
+   watch background on div__card_plan on desktop
 */
 body {
   display: grid;
@@ -90,14 +89,20 @@ h1 {
   color: var(--neutral-dark-blue);
   font-weight: var(--fw-900);
   font-size: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-block: 1rem;
 }
 
 .div__card_plan {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
+  background-color: hsl(225, 93%, 97%);
+  border-radius: 1rem;
+  padding-block: 1rem;
+}
+
+.img__music {
+  padding-inline: 1rem;
 }
 
 .p__plan {
@@ -111,16 +116,19 @@ h1 {
   font-size: .8rem;
   margin-left: 1rem;
   cursor: pointer;
+  padding-left: 2rem;
+  padding-top: .8rem;
 }
 
 .btn__payment {
-  margin-block: 2rem;
+  /* margin-block: 2rem; */
+  margin-block: 1.5rem;
   border-radius: .5rem;
   border: none;
   background-color: var(--primary-bright-blue);
   color: var(--primary-pale-blue);
   font-weight: var(--fw-700);
-  padding: .8rem 3rem;
+  padding: .8rem 3.7rem;
   box-shadow: .2rem .8rem 1rem var(--neutral-desat-blue);
   cursor: pointer;
 }
