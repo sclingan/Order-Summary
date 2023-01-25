@@ -159,7 +159,7 @@ footer {
   color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
 
   body{
     background-position: -5rem -32rem;
