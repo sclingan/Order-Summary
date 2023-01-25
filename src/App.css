@@ -66,6 +66,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--primary-pale-blue);
+  background-position: -12rem -45rem;
   font-family: var(--ff);
   font-size: var(--fs);
   font-weight: var(--fw-500);
@@ -158,4 +159,41 @@ footer {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 800px) {
+
+  body{
+    background-position: -5rem -32rem;
+  }
+
+  .div__card {
+    max-width: 28.125rem;
+  }
+
+  .div__card_info {
+    padding-inline: 3rem;
+  }
+
+  h1 {
+    padding-block: 1.5rem;
+  }
+
+  .div__card_plan {
+    padding-bottom: 2rem;
+  }
+
+  .a__change {
+    padding-left: 4rem;
+    font-size: 1rem;
+  }
+
+  .btn__payment {
+    padding: .8rem 6rem;
+  }
+
+  .btn__cancel {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
 }
