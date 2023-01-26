@@ -68,6 +68,7 @@ body {
   font-size: var(--fs);
   font-weight: var(--fw-500);
   color: var(--neutral-desat-blue);
+  padding-top: 4rem;
 }
 
 .div__card {
